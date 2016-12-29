@@ -43,7 +43,7 @@ BUILD_FINGERPRINT := google/sailfish/sailfish:10/QP1A.191005.007.A3/5972272:user
 
 $(call inherit-product, device/google/marlin/device-sailfish.mk)
 $(call inherit-product-if-exists, vendor/google_devices/marlin/device-vendor-sailfish.mk)
-$(call inherit-product-if-exists, vendor/google/sailfish/sailfish-vendor.mk)
+$(call inherit-product, vendor/google/sailfish/sailfish-vendor.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \

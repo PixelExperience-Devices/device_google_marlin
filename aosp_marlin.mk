@@ -43,7 +43,7 @@ BUILD_FINGERPRINT := google/marlin/marlin:10/QP1A.191005.007.A3/5972272:user/rel
 
 $(call inherit-product, device/google/marlin/device-marlin.mk)
 $(call inherit-product-if-exists, vendor/google_devices/marlin/device-vendor-marlin.mk)
-$(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
+$(call inherit-product, vendor/google/marlin/marlin-vendor.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \
