@@ -331,7 +331,6 @@ LIBCAMERA += libmmcamera_interface2
 LIBCAMERA += libmmjpeg_interface
 LIBCAMERA += libmmlib2d_interface
 LIBCAMERA += libqomx_core
-LIBCAMERA += mm-qcamera-app
 LIBCAMERA += camera_test
 LIBCAMERA += org.codeaurora.camera
 LIBCAMERA += libgooglecamerahal
