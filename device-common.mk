@@ -473,6 +473,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl:64
 
+# IMS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    RcsService \
+    PresencePolling
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service.marlin \
