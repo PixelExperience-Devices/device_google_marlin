@@ -675,3 +675,10 @@ PRODUCT_PACKAGES += \
 # Tool
 PRODUCT_PACKAGES += \
     libtinyxml
+
+# VR Services
+PRODUCT_PACKAGES += \
+    bufferhubd \
+    performanced \
+    virtual_touchpad \
+    vr_hwc
