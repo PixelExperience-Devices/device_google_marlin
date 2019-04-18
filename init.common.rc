@@ -1,8 +1,14 @@
 on charger
+    # Set runtime stune value
+    write /dev/stune/schedtune.boost 0
+    write /dev/stune/schedtune.prefer_idle 0
+
+    # Offline CPUs
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
     wait /dev/block/platform/soc/624000.ufshc
+
     # Enable UFS powersaving
     write /sys/devices/soc/624000.ufshc/clkgate_enable 1
     write /sys/devices/soc/624000.ufshc/624000.ufshc:ufs_variant/pm_qos_enable 1
@@ -17,6 +23,10 @@ on early-init
     chmod 0755 /sys/kernel/debug
 
 on init
+    # Set boottime stune value
+    write /dev/stune/schedtune.boost 100
+    write /dev/stune/schedtune.prefer_idle 1
+
     # Disable UFS powersaving
     write /sys/devices/soc/624000.ufshc/clkgate_enable 0
     write /sys/devices/soc/624000.ufshc/624000.ufshc:ufs_variant/pm_qos_enable 0
@@ -756,6 +766,10 @@ on property:sys.post_boot.parsed=1
 
 on property:sys.boot_completed=1
     start vendor.power_sh
+
+    # Set runtime stune value
+    write /dev/stune/schedtune.boost 0
+    write /dev/stune/schedtune.prefer_idle 0
 
     # Enable UFS powersaving
     write /sys/devices/soc/624000.ufshc/clkgate_enable 1
