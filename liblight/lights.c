@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#include <cutils/log.h>
+#include <log/log.h>
 #include <cutils/properties.h>
 
 #include <stdint.h>
