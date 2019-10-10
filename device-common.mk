@@ -681,6 +681,10 @@ PRODUCT_PACKAGES += \
     virtual_touchpad \
     vr_hwc
 
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
