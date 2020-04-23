@@ -668,6 +668,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.clearkey
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    media.mediadrmservice.enable=true \
+    ro.hardware.egl=adreno
+
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge
