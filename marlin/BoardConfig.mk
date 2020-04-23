@@ -95,6 +95,9 @@ endif
 
 BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=marlin user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff loop.max_part=7
 
+BOARD_VENDORIMAGE_PARTITION_SIZE := 314572800
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
 BOARD_ROOT_EXTRA_FOLDERS := firmware firmware/radio persist
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
 
