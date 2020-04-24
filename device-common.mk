@@ -238,7 +238,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     wificond \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    WifiOverlay
 
 #ANT+ stack
 PRODUCT_PACKAGES += \
