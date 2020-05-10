@@ -30,7 +30,7 @@ PRODUCT_NAME := aosp_sailfish
 PRODUCT_DEVICE := sailfish
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel
-PRODUCT_MANUFACTURER := HTC
+PRODUCT_MANUFACTURER := Google
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_COPY_FILES += device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.sailfish
