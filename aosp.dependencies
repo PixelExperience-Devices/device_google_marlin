@@ -4,8 +4,10 @@
       "target_path":"kernel/google/marlin"
    },
    {
-      "repository":"vendor_google",
-      "target_path":"vendor/google"
+      "repository":"vendor_google_marlin",
+      "target_path":"vendor/google/marlin",
+      "branch":"ten",
+      "remote": "pixel-devices-bitbucket"
    },
    {
       "repository":"packages_apps_PixelLiveWallpaper",
