@@ -659,6 +659,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces
+
 # Tool
 PRODUCT_PACKAGES += \
     libtinyxml
