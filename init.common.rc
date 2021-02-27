@@ -700,6 +700,7 @@ service vendor.loc_launcher /vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
     group gps inet diag wifi
+    capabilities NET_ADMIN NET_RAW
 
 service vendor.init-radio-sh /vendor/bin/init.radio.sh
     class late_start
