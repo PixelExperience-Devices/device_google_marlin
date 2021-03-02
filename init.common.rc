@@ -26,6 +26,9 @@ on early-init
     chmod 0755 /sys/kernel/debug
 
 on init
+    # Set sku property
+    start vendor.mid_sh
+
     # Set boottime stune value
     write /dev/stune/schedtune.boost 100
     write /dev/stune/schedtune.prefer_idle 1
@@ -163,10 +166,10 @@ on late-fs
     start vendor.time_daemon
 
 on post-fs-data
+    setprop ro.boot.hardware.sku ${boot.hardware.sku}
+
     # We can start netd here before in is launched in common init.rc on zygote-start
     start netd
-    # Set sku property
-    start vendor.mid_sh
     # Wait until the system time is set
     wait_for_prop sys.time.set true
 
