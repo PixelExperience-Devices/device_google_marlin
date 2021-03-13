@@ -1,6 +1,12 @@
 [
   {
-    "repository": "android_kernel_google_marlin",
+    "repository": "kernel_google_marlin",
     "target_path": "kernel/google/marlin"
+  },
+  {
+      "repository":"vendor_google_marlin",
+      "target_path":"vendor/google/marlin",
+      "branch":"eleven",
+      "remote": "pixel-devices-blobs"
   }
 ]
