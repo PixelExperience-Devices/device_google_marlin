@@ -663,6 +663,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmm-qcamera
 
+# GoogleCamera
+$(call inherit-product, packages/apps/GoogleCamera/gcam.mk)
+
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true

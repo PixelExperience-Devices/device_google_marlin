@@ -8,5 +8,11 @@
       "target_path":"vendor/google/marlin",
       "branch":"eleven",
       "remote": "pixel-devices-blobs"
-  }
+  },
+   {
+      "repository":"PixelBoot/packages_apps_GoogleCamera_marlin",
+      "target_path":"packages/apps/GoogleCamera",
+      "branch":"eleven",
+      "remote":"gitlab"
+   }
 ]
