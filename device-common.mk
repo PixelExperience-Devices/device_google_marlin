@@ -675,6 +675,10 @@ $(call inherit-product, packages/apps/GoogleCamera/gcam.mk)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
+# Use the default charger mode images
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true \
