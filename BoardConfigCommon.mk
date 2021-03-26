@@ -113,8 +113,8 @@ SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/marlin/sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/google/marlin/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR := device/google/marlin/sepolicy/private
+BOARD_EXT_PUBLIC_SEPOLICY_DIR := device/google/marlin/sepolicy/public
+BOARD_EXT_PRIVATE_SEPOLICY_DIR := device/google/marlin/sepolicy/private
 
 TARGET_FS_CONFIG_GEN := device/google/marlin/config.fs
 
