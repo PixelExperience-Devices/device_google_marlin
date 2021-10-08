@@ -698,3 +698,8 @@ PRODUCT_PACKAGES += \
 # Wi-Fi Overlay
 PRODUCT_PACKAGES += \
     WifiOverlay
+
+# APEX
+# Disable APEX compression
+# Keep this after including updatable_apex.mk
+PRODUCT_COMPRESSED_APEX := false
