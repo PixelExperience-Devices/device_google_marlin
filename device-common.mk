@@ -692,6 +692,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.mediadrmservice.enable=true \
     ro.hardware.egl=adreno
 
+# CHRE
+PRODUCT_PACKAGES += \
+    chre
+
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge
