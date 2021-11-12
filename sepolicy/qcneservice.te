@@ -4,8 +4,6 @@ type qcneservice, domain, coredomain;
 app_domain(qcneservice)
 net_domain(qcneservice)
 
-add_service(qcneservice, cne_service)
-
 unix_socket_connect(qcneservice, cnd, cnd)
 
 allow qcneservice { app_api_service radio_service }:service_manager find;
