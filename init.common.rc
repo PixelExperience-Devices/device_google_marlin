@@ -24,6 +24,7 @@ service vendor.charger /system/bin/charger
 on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
+    start adbd
 
 on init
     # Set sku property
