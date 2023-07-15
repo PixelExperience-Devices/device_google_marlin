@@ -644,6 +644,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.0 \
     android.hardware.radio.deprecated@1.0
 
+# Google Camera
+PRODUCT_PACKAGES += \
+    GcamPrebuilt
+
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge
