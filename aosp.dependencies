@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "kernel_google_marlin",
+    "target_path": "kernel/google/marlin"
+  },
+  {
+      "repository":"vendor_google_marlin",
+      "target_path":"vendor/google/marlin",
+      "branch":"thirteen",
+      "remote": "pixel-devices-blobs"
+  },
+   {
+      "repository":"PixelBoot/packages_apps_GoogleCamera_marlin",
+      "target_path":"packages/apps/GoogleCamera",
+      "branch":"thirteen",
+      "remote":"gitlab"
+   }
+]
