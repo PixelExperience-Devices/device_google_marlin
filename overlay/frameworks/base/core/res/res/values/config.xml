@@ -436,4 +436,7 @@
          etc. dialogs. -->
     <string translatable="false" name="config_appsNotReportingCrashes">com.qualcomm.qcrilmsgtunnel</string>
 
+    <!-- AOSP WFD -->
+    <bool name="config_enableWifiDisplay">true</bool>
+
 </resources>
